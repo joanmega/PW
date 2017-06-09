@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* Color del fondo de la página para los distintos navegadores y medidas de la etiqueta boby */
+
+body{
+	margin: auto; 
+	width: 1140px; /* Anchura de 1140 píxels */
+	height: auto; /* Altura automática determinada por los demás componentes de la estructura de la página */
+	background: #e1ffff; /* Color para navegadores antiguos */
+	background: -moz-linear-gradient(top,  #e1ffff 0%, #fdffff 25%, #bee4f8 75%, #b1d8f5 100%); /* Firefox 3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1ffff), color-stop(25%,#fdffff), color-stop(75%,#bee4f8), color-stop(100%,#b1d8f5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e1ffff 0%,#fdffff 25%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e1ffff 0%,#fdffff 25%,#bee4f8 75%,#b1d8f5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e1ffff 0%,#fdffff 25%,#bee4f8 75%,#b1d8f5 100%); /* Explorer 10+ */
+	background: linear-gradient(to bottom,  #e1ffff 0%,#fdffff 25%,#bee4f8 75%,#b1d8f5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Estilos para la cabecera de la página. Esta cabecera se aplicará a todas las páginas menos a la de identificación e index_video.html*/
+
+#cabecera {
+	clear: both; /* Solamente tenemos la cabecera arriba, sin nada a los lados */
+	width: auto; /* El ancho es automático. Nos coge la anchura que le hemos puesto a body */
+	height: 185px; /* La cabecera va a tener una altura de 185 píxels */
+	text-align:center; /* Texto centrado */
+	background-image: url(../img/viDocens_logo_WP.png); /* Añadimos la imágen como parte del fondo, */
+	background-repeat:no-repeat; /* hacemos que no se repita ni en el eje X ni en el Y y */
+	background-position:left; /* la ubicamos en la izquierda del contenedor */
+}
+
+/* Estilos para la cabecera de la página index_video.html y de indentificación */
+
+#cabecera_{
+	clear:both; /* Solamente tenemos la cabecera arriba, sin nada a los lados */
+	height: 185px; /* La cabecera va a tener una altura de 185 píxels */
+	width:auto; /* El ancho es automático. Nos coge la anchura que le hemos puesto a body */
+	text-align:center; /* Texto centrado */
+}
+
+
+/* Estilo para el logo de la página del index */
+
+#logoInicial{
+	display: block; /* Visualizamos todo como un bloque */
+	float: left; /* Hacemos que esté lo más a la izquierda del último elemento que en este caso no hay. Se situará a la izquierda */
+	width: 690px; /* Tendrá una anchura de 690 px */
+	padding: 5px; /* Tendrá un espacio entre su margen y su contenido de 5 píxels por todos los lados */
+	min-height: 560px; /* La altura mínima para este contenedor será de 560 px */
+	margin: auto; /* Márgenes automáticos */
+	text-align:center; /* Texto alineados al centro */
+}
+
+/* Estilo del logo en la página de identificación. */
+
+#logoInicial table{
+	text-align: left;
+	margin: auto;
+}
+
+/* Estilo de la barra de menú superior */
+
+#menu {
+	height: 50px; /* Altura de la barra menú */
+	background-color: #0d3d03; /* Color de fondo */
+}
+
+#menu ul{ /* Estilo para la lista del menú */
+	text-align: center; 
+	padding-top: 15px; /* Espacio entre el borde del contenedor y su contenido */
+}
+
+#menu ul li{ /* Estilos para cada una de las opciones de la lista del menú */
+	display: inline;
+	padding-right: 7px; /*Separar el texto del borde derecho del contenedor*/
+	background-color: transparent; /* Color de fondo */
+	text-align: center;
+}
+
+a{
+	text-decoration: none; /* Quitamos la decoración a los hipervículos */
+}
+
+
+/* Efectos para los hipervínculos al pasar el ratón por encima de ellos */
+a:hover{
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%, rgba(138,191,236,1) 46%, rgba(125,185,232,0.63) 57%, rgba(125,185,232,0) 76%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(7%,rgba(184,212,252,1)), color-stop(46%,rgba(138,191,236,1)), color-stop(57%,rgba(125,185,232,0.63)), color-stop(76%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8d4fc', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Estilo para los enlaces de la lista del menú */
+#menu ul li a{
+	padding: 10px;
+	color:#FFFFFF;
+}
+
+
+/* Estilo para los enlaces de la lista del menú cuando se pasa por encima de ellos el ratón */
+#menu ul li a:hover{
+	padding: 10px;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%, rgba(138,191,236,1) 46%, rgba(125,185,232,0.63) 57%, rgba(125,185,232,0) 76%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(7%,rgba(184,212,252,1)), color-stop(46%,rgba(138,191,236,1)), color-stop(57%,rgba(125,185,232,0.63)), color-stop(76%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(184,212,252,1) 7%,rgba(138,191,236,1) 46%,rgba(125,185,232,0.63) 57%,rgba(125,185,232,0) 76%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8d4fc', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Estilos del marco de los formularios */
+
+fieldset{ 
+	border-radius: 20px; /* Le ponemos las esquinas redondeadas */
+}
+
+/* Estilo para el div que contiene el lateral derecho, izquierdo y contenido de la página */
+
+#cuerpo {
+	clear: both;
+	width: 1140px; 
+	min-height: 570px;
+    height: auto;
+}
+
+#lat_izquierdo_ {
+	float: left;
+	padding: 5px;
+	width: 210px;
+	min-height: 560px;
+}
+
+#lat_izquierdo {
+	float: left;
+	margin-top: 30px;
+	padding: 5px;
+	width: 208px;
+	min-height: 528px;
+	background-color:#FFE4C4;
+	border-radius: 10px;
+	border:#006600 solid 1px;
+}
+
+#lat_izquierdo ul{
+	list-style: none;
+}
+
+#contenido {
+	float: left;
+	width: 690px;
+	padding: 5px;
+	margin-top: 30px;
+	min-height: 530px;
+}
+
+#lat_derecho {
+	float: left;
+	width: 208px;
+	padding: 5px;
+	margin-top: 30px;
+	min-height: 528px;
+	background-color:#FFE4C4;
+	border:#006600 solid 1px;
+	border-radius: 10px;
+}
+
+/* Estilo para el pie de página */
+
+#pie_ {
+	clear: both;
+	height: 100px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+#pie {
+	clear: both;
+	height: 100px;
+	padding: 10px;
+	background-color:#16520d;
+	margin-top: 30px;
+}
+
+/* Estilo para los objetos tipo input */
+
+input, select, textarea{
+	border-radius: 5px;
+	background-color:#FFFF99;
+}
+
+textarea {
+	width: 550px;
+	resize: none;
+}
+
+/* Estilo para los elementos tipo input cuando obtienen el foco */
+
+input:focus, select:focus, textarea:focus{
+	background-color:#FFCC33;
+}
+
+/* Estilo de las tablas en los formularios de consulta */
+
+.tablaConsultas{
+	border:#0000FF solid 1px;
+	width:650px;
+}
+
+.tablaConsultas td{
+	border:#0099FF solid 1px;
+	width: 150px;
+	height: 44px;
+}
+.tablaConsultas td span{
+	font-weight: 900;
+	color: #000099;
+}
+
+
+/* Dimensiones del reproductor */
+#reproductor{
+	width: 688px;
+	height: 475px;
+}
